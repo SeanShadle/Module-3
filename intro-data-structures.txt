@@ -1,0 +1,23 @@
+1.
+	a. var line = ["Vivian", "Ava", "Josh", "Patrick", "Mike"];
+	b. line.push("Mary");
+	c. var j = function findJosh() {
+  		return line.indexOf("Josh");
+	    }
+	d. var j = function findJosh() {
+  		return line.indexOf("Emily");
+	    }
+	    I would have thought it would be "undefined," but it's "-1" as the index.
+	e. line.splice(1, 0, "Melissa");
+	f. var rm = line.indexOf("Patrick");
+	    if (rm > -1) {
+  		line.splice(rm, 1);
+	    }
+
+2. How about a line of traffic on the road!
+This would be able to be represented in an array as there are no "ties." 
+People could merge in to the middle of the line, turn around and leave the traffic, or come up to traffic and be added to the end. You could find the position in traffic of a certain individual.
+
+Var traffic = ["car", "truck", "motorcycle", "semi"];
+
+3. As an array of objects, it would be fairly simple as this lesson discusses. As an array, developers could access the index of the data and add, insert, delete, etc. 

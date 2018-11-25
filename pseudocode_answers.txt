@@ -1,0 +1,54 @@
+1.Programmers use pseudocode so planning out projects or complex algorithms is easier for the programmers to read.
+2.It wouldn’t work. Pseudocode is not readable by computers.
+
+1.INPUT two numbers
+IF first number is larger than second number THEN
+	PRINT “First number is larger”
+ELSE
+	PRINT “Second number is larger”
+END IF
+
+function largerNum (n1, n2){
+ if(n1 > n2){
+   return n1 + " is larger!"
+ }else{
+   return n2 + " is larger!"
+ }
+}
+largerNum(1,2);
+
+2.  FOR length of 1 to 100
+	Print numbers 1 to 100
+	STOP at 100
+       ENDFOR
+function count(){
+ for(let i = 0; i <= 100; i++){
+   console.log(i);
+ }
+}
+
+count();
+
+
+
+3. INPUT array and entry
+	FOR length of array
+		IF array index equals entry THEN
+		PRINT entry
+	ENDFOR
+function search(arr, str){
+ for(let i=0; i < arr.length; i++){
+   if(arr[i] == str){
+     return arr[i];
+   }
+ }
+}
+
+4.var phonebook = [123, 456, 789];
+var myNumber = 123;
+for (i=0; i<phonebook.length; i++) {
+    if (phonebook[i] == myNumber){
+        return phonebook[i];
+    }	
+}
+    return('There are no results');

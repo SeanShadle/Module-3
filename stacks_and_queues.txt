@@ -1,0 +1,47 @@
+1. The main difference between a stack and queue is that a stack implements a LIFO priority collection, while a queue implements a FIFO priority collection. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
+
+2. They both are used to store data. Allow an order of operations. Support system functions
+
+
+3.For implementing the undo/redo function, I'd use LIFO because I'd want to look at the most recent arrival first. For undo, I'd pop the most recent item and push it onto a redo stack; for re-do, I'd pop the most recent item from the redo stack and push it back on the main stack.
+
+
+1. function REVERSE(original) {
+  let stack = [];
+  for (let i = 0; i < original.length; i++)
+    stack.push(original[i]);
+  
+  let reversed = '';
+  for (let i = stack.length-1; i >= 0; i--)
+    reversed += stack[i];
+  return reversed;
+}
+
+
+2. CLASS Stack
+FUNCTION pop(queue) {
+   let list = [];
+   for (let i = 0; i < queue.length-1; i++)
+    list.push(queue[i]);
+  let deleted = queue[queue.length-1]
+  return deleted
+}
+ END FUNCTION
+END CLASS
+
+
+
+
+
+
+1. CLASS QUEUE
+ FUNCTION enqueue(element)
+   APPEND element to the end of the list
+ END FUNCTION
+
+ FUNCTION dequeue
+   SET temp to the first element
+  REMOVE FIRST element of list from list
+  RETURN temp
+ END FUNCTION
+END CLASS
